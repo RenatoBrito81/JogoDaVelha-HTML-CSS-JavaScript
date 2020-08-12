@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/estilo-jogo-velha.css">
+
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <div id="titulo-jogo">Jogo da Velha</div>
+    <div id="coluna-jogo-velha">
+        <div id="coluna-jogo">
+            <div>
+                <div id="primeira-linha">
+                    <div id="q1" class="quadrado">-</div>
+                    <div id="q2" class="quadrado">-</div>
+                    <div id="q3" class="quadrado">-</div>
+                </div>
+
+                <div id="segunda-linha">
+                    <div id="q4" class="quadrado">-</div>
+                    <div id="q5" class="quadrado">-</div>
+                    <div id="q6" class="quadrado">-</div>
+                </div>
+
+                <div id="terceira-linha">
+                    <div id="q7" class="quadrado">-</div>
+                    <div id="q8" class="quadrado">-</div>
+                    <div id="q9" class="quadrado">-</div>
+                </div>
+            </div>
+            <div id="jogo-informacoes">
+                <div>&nbsp;</div>
+                <div id="jogo-jogador">
+                    Vez do: Jogador <span id="vez-jogador">X</span>
+                </div>
+                <div id="jogo-jogador">
+                    Último ganhador: Jogador <span id="ultimo-ganhador">X</span>
+                </div>
+                <div id="jogo-comandos">
+                    <button>Jogar novamente</button>
+                </div>
+            </div>
+        </div>
+        <div id="coluna-placar">
+            <div id="placar-titulo">placar</div>
+            <div id="placar-elementos">
+                <div id="placar-elementos-titulo">
+                    <div id="placar-coluna-1" class="tabela-placar-titulo">Jogador X</div>
+                    <div id="placar-coluna-2" class="tabela-placar-coluna-central">x</div>
+                    <div id="placar-coluna-3" class="tabela-placar-titulo">Jogador O</div>
+                </div>
+                <div id="placar-elementos-dados">
+                    <div id="placar-coluna-1" class="tabela-placar-valor">0</div>
+                    <div id="placar-coluna-2" class="tabela-placar-coluna-central">&nbsp;</div>
+                    <div id="placar-coluna-3" class="tabela-placar-valor">0</div>
+                </div>
+                <div id="placar-comandos" class="placar-comandos">
+                    <button>Resetar placar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

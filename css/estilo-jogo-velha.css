@@ -1,0 +1,155 @@
+div#titulo-jogo {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bolder;
+
+    background-color: #ded;
+    border: 2px solid black;
+}
+
+div#coluna-jogo-velha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    background-color: #eee;
+    border: 2px solid black;
+}
+
+div#coluna-jogo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: black;
+}
+
+div#primeira-linha, div#segunda-linha{
+    margin-bottom: 20px;
+}
+
+div#q2, div#q5, div#q8{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+div#jogo-informacoes{
+    background-color: #eee;
+}
+
+div#jogo-jogador{
+    text-align: center;
+    font-size: 22px;
+    padding: 3px;
+}
+
+div#jogo-comandos{
+    text-align: center;
+    padding: 3px;
+}
+
+div#jogo-comandos button{
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
+
+.quadrado {
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+    padding: 40px;
+    
+    font-size: 60px;
+    width: 60px;
+
+    background-color: #eee;
+    color: #eee;
+
+    cursor: pointer;
+}
+
+div#coluna-placar{
+    /*margin-left: 60px;*/
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 30%;
+}
+
+div#placar-titulo{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bolder;
+    background-color: rgb(209, 207, 207);
+    border: 4px solid black;
+}
+
+div#placar-elementos-titulo, div#placar-elementos-dados{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: -5px;
+}
+
+.tabela-placar-titulo {
+    text-align: center;
+    padding: 10px;
+    
+    font-size: 22px;
+    font-weight: bold;
+    width: 300px;
+
+    background-color: #eee;
+    color: "black";
+
+    border: 4px solid black;
+
+    margin-bottom: -5px;
+}
+
+.tabela-placar-coluna-central{
+    text-align: center;
+    padding: 10px;
+    
+    font-size: 22px;
+    font-weight: bold;
+    width: 50px;
+
+    background-color: #eee;
+    color: "black";
+
+    border: 4px solid black;
+
+    margin-left: -5px;
+    margin-right: -5px;
+    margin-bottom: -5px;
+}
+
+.tabela-placar-valor {
+    text-align: center;
+    padding: 10px;
+    
+    font-size: 22px;
+    width: 300px;
+
+    background-color: #eee;
+    color: "black";
+
+    border: 4px solid black;
+
+    margin-bottom: -5px;
+}
+
+div#placar-comandos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+div#placar-comandos button{
+    height: 50px;
+    font-size: 20px;
+    color: black;
+    cursor: pointer;
+}
