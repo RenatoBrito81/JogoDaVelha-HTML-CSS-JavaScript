@@ -2,7 +2,7 @@ var jogadorAtual = "X";
 var jogadorVencedor = null;
 var sequenciaVencedora = null;
 var empate = false;
-var contadorJogadores = [0, 0, 0];
+var contadoresPlacar = [0, 0, 0];
 
 var sequenciasVencedoras = [
     ["q1","q2","q3"],
@@ -20,12 +20,12 @@ mudarJogador(jogadorAtual);
 
 //Função para resetar o placar
 function resetarPlacar(){
-    contadorJogadores[0]=0;
-    contadorJogadores[1]=0;
-    contadorJogadores[2]=0;
-    document.getElementById("placar-jogador-x").innerHTML = contadorJogadores[0];
-    document.getElementById("placar-jogador-o").innerHTML = contadorJogadores[1];
-    document.getElementById("placar-empates").innerHTML = contadorJogadores[2];
+    contadoresPlacar[0]=0;
+    contadoresPlacar[1]=0;
+    contadoresPlacar[2]=0;
+    document.getElementById("placar-jogador-x").innerHTML = contadoresPlacar[0];
+    document.getElementById("placar-jogador-o").innerHTML = contadoresPlacar[1];
+    document.getElementById("placar-empates").innerHTML = contadoresPlacar[2];
 }
 
 //Função para escolher o quadrado
@@ -92,6 +92,7 @@ function verificarVencedor(){
     }
 
     if(resultado === false){
+        //Verifica se aidna há jogadas disponíveis
         if(verificarJogadasDisponiveis() === false){
             empate = true;
             setarPlacar();
@@ -103,6 +104,7 @@ function verificarVencedor(){
 function verificarJogadasDisponiveis(){
     var jogadasDisponiveis = false;
 
+    //Verifica se hpá jogadas disponíveis
     for(sequencias of sequenciasVencedoras){
         for(sequencia of sequencias){
             if(document.getElementById(sequencia).innerHTML === "-"){
@@ -136,17 +138,17 @@ function setarPlacar(){
     //Verifica senão houve empate
     if(empate === false){
         if(jogadorVencedor === "X"){
-            contadorJogadores[0]++;
-            document.getElementById("placar-jogador-x").innerHTML = contadorJogadores[0];
+            contadoresPlacar[0]++;
+            document.getElementById("placar-jogador-x").innerHTML = contadoresPlacar[0];
         }
         else{
-            contadorJogadores[1]++;
-            document.getElementById("placar-jogador-o").innerHTML = contadorJogadores[1];
+            contadoresPlacar[1]++;
+            document.getElementById("placar-jogador-o").innerHTML = contadoresPlacar[1];
         }
     }
     else{
-        contadorJogadores[2]++;
-        document.getElementById("placar-empates").innerHTML = contadorJogadores[2];
+        contadoresPlacar[2]++;
+        document.getElementById("placar-empates").innerHTML = contadoresPlacar[2];
     }
 }
 
