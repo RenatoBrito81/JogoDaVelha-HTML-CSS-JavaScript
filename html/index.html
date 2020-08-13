@@ -14,33 +14,33 @@
         <div id="coluna-jogo">
             <div>
                 <div id="primeira-linha">
-                    <div id="q1" class="quadrado">-</div>
-                    <div id="q2" class="quadrado">-</div>
-                    <div id="q3" class="quadrado">-</div>
+                    <div id="q1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                    <div id="q2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                    <div id="q3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
                 </div>
 
                 <div id="segunda-linha">
-                    <div id="q4" class="quadrado">-</div>
-                    <div id="q5" class="quadrado">-</div>
-                    <div id="q6" class="quadrado">-</div>
+                    <div id="q4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                    <div id="q5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                    <div id="q6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
                 </div>
 
                 <div id="terceira-linha">
-                    <div id="q7" class="quadrado">-</div>
-                    <div id="q8" class="quadrado">-</div>
-                    <div id="q9" class="quadrado">-</div>
+                    <div id="q7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                    <div id="q8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+                    <div id="q9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
                 </div>
             </div>
             <div id="jogo-informacoes">
                 <div>&nbsp;</div>
                 <div id="jogo-jogador">
-                    Vez do: Jogador <span id="vez-jogador">X</span>
+                    Vez do: Jogador <span id="vez-jogador"></span>
                 </div>
                 <div id="jogo-jogador">
-                    Último ganhador: Jogador <span id="ultimo-ganhador">X</span>
+                    Último ganhador: <span id="ultimo-ganhador"></span>
                 </div>
                 <div id="jogo-comandos">
-                    <button>Jogar novamente</button>
+                    <button onclick="jogarNovamente()">Jogar novamente</button>
                 </div>
             </div>
         </div>
@@ -48,20 +48,24 @@
             <div id="placar-titulo">placar</div>
             <div id="placar-elementos">
                 <div id="placar-elementos-titulo">
-                    <div id="placar-coluna-1" class="tabela-placar-titulo">Jogador X</div>
-                    <div id="placar-coluna-2" class="tabela-placar-coluna-central">x</div>
-                    <div id="placar-coluna-3" class="tabela-placar-titulo">Jogador O</div>
+                    <div class="tabela-placar-titulo">Jogador X</div>
+                    <div class="tabela-placar-coluna-central">x</div>
+                    <div class="tabela-placar-titulo">Jogador O</div>
                 </div>
                 <div id="placar-elementos-dados">
-                    <div id="placar-coluna-1" class="tabela-placar-valor">0</div>
-                    <div id="placar-coluna-2" class="tabela-placar-coluna-central">&nbsp;</div>
-                    <div id="placar-coluna-3" class="tabela-placar-valor">0</div>
+                    <div id="placar-jogador-x" class="tabela-placar-valor">0</div>
+                    <div class="tabela-placar-coluna-central">&nbsp;</div>
+                    <div id="placar-jogador-o" class="tabela-placar-valor">0</div>
+                </div>
+                <div id="placar-empates-titulo">
+                    Empates: <span id="placar-empates">0</span>
                 </div>
                 <div id="placar-comandos" class="placar-comandos">
-                    <button>Resetar placar</button>
+                    <button onclick="resetarPlacar()">Resetar placar</button>
                 </div>
             </div>
         </div>
     </div>
+    <script src="../js/funcoes-jogo-velha.js"></script>
 </body>
 </html>
